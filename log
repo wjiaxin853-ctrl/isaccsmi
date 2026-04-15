@@ -1,0 +1,662 @@
+
+  File "/home/admin204/isaac/exts/isaacsim.robot_motion.motion_generation/isaacsim/robot_motion/motion_generation/articulation_kinematics_solver.py", line 20, in <module>
+    from isaacsim.core.api.articulations import ArticulationSubset
+  File "/home/admin204/isaac/exts/isaacsim.core.api/isaacsim/core/api/__init__.py", line 17, in <module>
+    from isaacsim.core.api.physics_context.physics_context import PhysicsContext
+  File "/home/admin204/isaac/exts/isaacsim.core.api/isaacsim/core/api/physics_context/__init__.py", line 15, in <module>
+    from isaacsim.core.api.physics_context.physics_context import PhysicsContext
+  File "/home/admin204/isaac/exts/isaacsim.core.api/isaacsim/core/api/physics_context/physics_context.py", line 20, in <module>
+    from isaacsim.core.simulation_manager import SimulationManager
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/__init__.py", line 15, in <module>
+    from .impl.extension import Extension
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/impl/__init__.py", line 15, in <module>
+    from .extension import *
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/impl/extension.py", line 21, in <module>
+    from .simulation_manager import SimulationManager
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/impl/simulation_manager.py", line 20, in <module>
+    import isaacsim.core.utils.torch as torch_utils
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/torch/__init__.py", line 15, in <module>
+    from .maths import *
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/torch/maths.py", line 19, in <module>
+    import torch
+  File "/home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/__init__.py", line 409, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+ImportError: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+
+2026-04-15T12:58:41Z [18,553ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'isaacsim.robot_motion.motion_generation' in '/home/admin204/isaac/exts/isaacsim.robot_motion.motion_generation' failed to load.
+
+At:
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+
+2026-04-15T12:58:41Z [18,553ms] [Error] [omni.ext.plugin] [ext: isaacsim.robot_motion.motion_generation-8.0.26] Failed to startup python extension.
+[18.864s] [ext: isaacsim.asset.browser-1.3.23] startup
+2026-04-15T12:58:42Z [18,981ms] [Error] [omni.graph.core._impl.extension] OGN node registration completed with errors: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+[19.023s] [ext: omni.kit.tool.asset_importer-4.3.2] startup
+[19.040s] [ext: omni.isaac.nucleus-1.0.6] startup
+2026-04-15T12:58:42Z [19,018ms] [Warning] [omni.isaac.nucleus] omni.isaac.nucleus has been deprecated in favor of isaacsim.storage.native. Please update your code accordingly.
+2026-04-15T12:58:42Z [19,018ms] [Warning] [omni.isaac.nucleus.nucleus] omni.isaac.nucleus.nucleus has been deprecated in favor of isaacsim.storage.native. Please update your code accordingly.
+[19.045s] [ext: omni.isaac.range_sensor-4.0.6] startup
+2026-04-15T12:58:42Z [19,022ms] [Warning] [omni.isaac.range_sensor] omni.isaac.range_sensor has been deprecated in favor of isaacsim.sensors.physx. Please update your code accordingly.
+2026-04-15T12:58:42Z [19,052ms] [Error] [omni.ext._impl.custom_importer] Failed to import python module omni.isaac.range_sensor. Error: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12. Traceback:
+Traceback (most recent call last):
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 85, in import_module
+    return importlib.import_module(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/python/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/admin204/isaac/extsDeprecated/omni.isaac.range_sensor/omni/isaac/range_sensor/__init__.py", line 26, in <module>
+    from isaacsim.sensors.physx import _range_sensor
+  File "/home/admin204/isaac/exts/isaacsim.sensors.physx/isaacsim/sensors/physx/__init__.py", line 16, in <module>
+    from .impl import *
+  File "/home/admin204/isaac/exts/isaacsim.sensors.physx/isaacsim/sensors/physx/impl/__init__.py", line 16, in <module>
+    from .commands import *
+  File "/home/admin204/isaac/exts/isaacsim.sensors.physx/isaacsim/sensors/physx/impl/commands.py", line 23, in <module>
+    from isaacsim.core.utils.xforms import reset_and_set_xform_ops
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/xforms.py", line 18, in <module>
+    from isaacsim.core.utils.prims import (
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/prims.py", line 31, in <module>
+    from isaacsim.core.utils.types import SDF_type_to_Gf
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/types.py", line 18, in <module>
+    import torch
+  File "/home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/__init__.py", line 409, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+ImportError: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+
+2026-04-15T12:58:42Z [19,053ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'omni.isaac.range_sensor' in '/home/admin204/isaac/extsDeprecated/omni.isaac.range_sensor' failed to load.
+
+At:
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+
+2026-04-15T12:58:42Z [19,053ms] [Error] [omni.ext.plugin] [ext: omni.isaac.range_sensor-4.0.6] Failed to startup python extension.
+[19.377s] [ext: isaacsim.robot.manipulators.examples-1.1.2] startup
+2026-04-15T12:58:42Z [19,359ms] [Warning] [omni.isaac.range_sensor] omni.isaac.range_sensor has been deprecated in favor of isaacsim.sensors.physx. Please update your code accordingly.
+2026-04-15T12:58:42Z [19,392ms] [Error] [omni.graph.core._impl.extension] OGN node registration completed with errors: module 'torch' has no attribute 'Tensor'
+2026-04-15T12:58:42Z [19,393ms] [Error] [omni.ext._impl.custom_importer] Failed to import python module isaacsim.robot.manipulators.examples. Error: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12. Traceback:
+Traceback (most recent call last):
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 85, in import_module
+    return importlib.import_module(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/python/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/admin204/isaac/exts/isaacsim.robot.manipulators/isaacsim/robot/manipulators/__init__.py", line 16, in <module>
+    from .manipulators.single_manipulator import SingleManipulator
+  File "/home/admin204/isaac/exts/isaacsim.robot.manipulators/isaacsim/robot/manipulators/manipulators/__init__.py", line 17, in <module>
+    from isaacsim.robot.manipulators.manipulators.single_manipulator import SingleManipulator
+  File "/home/admin204/isaac/exts/isaacsim.robot.manipulators/isaacsim/robot/manipulators/manipulators/single_manipulator.py", line 18, in <module>
+    from isaacsim.core.prims import SingleArticulation, SingleRigidPrim
+  File "/home/admin204/isaac/exts/isaacsim.core.prims/isaacsim/core/prims/__init__.py", line 16, in <module>
+    from .impl import *
+  File "/home/admin204/isaac/exts/isaacsim.core.prims/isaacsim/core/prims/impl/__init__.py", line 16, in <module>
+    from .articulation import Articulation
+  File "/home/admin204/isaac/exts/isaacsim.core.prims/isaacsim/core/prims/impl/articulation.py", line 27, in <module>
+    import torch
+  File "/home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/__init__.py", line 409, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+ImportError: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+
+2026-04-15T12:58:42Z [19,393ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'isaacsim.robot.manipulators.examples' in '/home/admin204/isaac/exts/isaacsim.robot.manipulators.examples' failed to load.
+
+At:
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+
+2026-04-15T12:58:42Z [19,393ms] [Error] [omni.ext.plugin] [ext: isaacsim.robot.manipulators.examples-1.1.2] Failed to startup python extension.
+[19.715s] [ext: omni.isaac.asset_browser-1.0.6] startup
+2026-04-15T12:58:42Z [19,699ms] [Warning] [omni.isaac.asset_browser] omni.isaac.asset_browser has been deprecated in favor of isaacsim.asset.browser. Please update your code accordingly.
+[19.727s] [ext: isaacsim.asset.importer.mjcf-2.5.13] startup
+2026-04-15T12:58:43Z [19,815ms] [Error] [omni.graph.core._impl.extension] OGN node registration completed with errors: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+[19.845s] [ext: isaacsim.core.cloner-1.4.10] startup
+2026-04-15T12:58:43Z [19,859ms] [Error] [omni.ext._impl.custom_importer] Failed to import python module isaacsim.core.cloner. Error: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12. Traceback:
+Traceback (most recent call last):
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 85, in import_module
+    return importlib.import_module(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/python/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/admin204/isaac/exts/isaacsim.core.cloner/isaacsim/core/cloner/__init__.py", line 16, in <module>
+    from .impl.cloner import *
+  File "/home/admin204/isaac/exts/isaacsim.core.cloner/isaacsim/core/cloner/impl/cloner.py", line 21, in <module>
+    import torch
+  File "/home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/__init__.py", line 409, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+ImportError: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+
+2026-04-15T12:58:43Z [19,859ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'isaacsim.core.cloner' in '/home/admin204/isaac/exts/isaacsim.core.cloner' failed to load.
+
+At:
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+
+2026-04-15T12:58:43Z [19,859ms] [Error] [omni.ext.plugin] [ext: isaacsim.core.cloner-1.4.10] Failed to startup python extension.
+[20.211s] [ext: omni.isaac.assets_check-0.3.13] startup
+2026-04-15T12:58:43Z [20,188ms] [Warning] [omni.isaac.assets_check] omni.isaac.assets_check has been deprecated in favor of isaacsim.asset.browser. Please update your code accordingly.
+[20.215s] [ext: isaacsim.cortex.framework-1.0.12] startup
+[20.224s] [ext: isaacsim.examples.browser-0.2.1] startup
+[20.240s] [ext: isaacsim.asset.importer.urdf-2.4.30] startup
+[20.280s] [ext: omni.isaac.cloner-1.0.7] startup
+2026-04-15T12:58:43Z [20,261ms] [Warning] [omni.isaac.cloner] omni.isaac.cloner has been deprecated in favor of isaacsim.core.cloner. Please update your code accordingly.
+2026-04-15T12:58:43Z [20,324ms] [Error] [omni.ext._impl.custom_importer] Failed to import python module omni.isaac.cloner. Error: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12. Traceback:
+Traceback (most recent call last):
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 85, in import_module
+    return importlib.import_module(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/python/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/admin204/isaac/extsDeprecated/omni.isaac.cloner/omni/isaac/cloner/__init__.py", line 25, in <module>
+    from isaacsim.core.cloner.impl.cloner import Cloner
+  File "/home/admin204/isaac/exts/isaacsim.core.cloner/isaacsim/core/cloner/impl/cloner.py", line 21, in <module>
+    import torch
+  File "/home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/__init__.py", line 409, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+ImportError: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+
+2026-04-15T12:58:43Z [20,324ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'omni.isaac.cloner' in '/home/admin204/isaac/extsDeprecated/omni.isaac.cloner' failed to load.
+
+At:
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+
+2026-04-15T12:58:43Z [20,324ms] [Error] [omni.ext.plugin] [ext: omni.isaac.cloner-1.0.7] Failed to startup python extension.
+[20.654s] [ext: omni.importer.onshape-1.0.1] startup
+[20.694s] [ext: omni.kit.widget.collection-0.3.1] startup
+[20.702s] [ext: omni.isaac.core_nodes-2.0.6] startup
+2026-04-15T12:58:43Z [20,682ms] [Warning] [omni.isaac.core_nodes] omni.isaac.core_nodes has been deprecated in favor of isaacsim.core.nodes. Please update your code accordingly.
+[20.710s] [ext: omni.isaac.cortex-1.0.5] startup
+2026-04-15T12:58:43Z [20,692ms] [Warning] [omni.isaac.cortex] omni.isaac.cortex has been deprecated in favor of isaacsim.cortex.framework. Please update your code accordingly.
+[20.719s] [ext: isaacsim.core.throttling-2.2.2] startup
+[20.734s] [ext: omni.kit.window.collection-0.3.1] startup
+2026-04-15T12:58:43Z [20,714ms] [Warning] [omni.kit.window.collection.collection_watch] Get collection from usdrt stage failed: Attach(): incompatible function arguments. The following argument types are supported:
+    1. (stageId: int) -> usdrt.Usd._Usd.Stage
+    2. (fabricId: usdrt.helpers._helpers.FabricId) -> usdrt.Usd._Usd.Stage
+
+Invoked with: -1
+[20.741s] [ext: omni.anim.shared.core-107.0.1] startup
+[20.761s] [ext: omni.sensors.nv.common-3.0.0] startup
+[20.787s] [ext: omni.kit.viewport.menubar.lighting-107.3.1] startup
+[20.803s] [ext: omni.isaac.franka-1.0.7] startup
+2026-04-15T12:58:44Z [20,782ms] [Warning] [omni.isaac.franka] omni.isaac.franka has been deprecated in favor of isaacsim.robot.manipulators.examples.franka. Please update your code accordingly.
+2026-04-15T12:58:44Z [20,782ms] [Warning] [omni.isaac.franka.franka] omni.isaac.franka has been deprecated in favor of isaacsim.robot.manipulators.examples.franka. Please update your code accordingly.
+2026-04-15T12:58:44Z [20,859ms] [Error] [omni.ext._impl.custom_importer] Failed to import python module omni.isaac.franka. Error: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12. Traceback:
+Traceback (most recent call last):
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 85, in import_module
+    return importlib.import_module(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/python/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/admin204/isaac/extsDeprecated/omni.isaac.franka/omni/isaac/franka/__init__.py", line 29, in <module>
+    from .franka import *
+  File "/home/admin204/isaac/extsDeprecated/omni.isaac.franka/omni/isaac/franka/franka.py", line 22, in <module>
+    from isaacsim.robot.manipulators.examples.franka.franka import *
+  File "/home/admin204/isaac/exts/isaacsim.robot.manipulators/isaacsim/robot/manipulators/__init__.py", line 16, in <module>
+    from .manipulators.single_manipulator import SingleManipulator
+  File "/home/admin204/isaac/exts/isaacsim.robot.manipulators/isaacsim/robot/manipulators/manipulators/__init__.py", line 17, in <module>
+    from isaacsim.robot.manipulators.manipulators.single_manipulator import SingleManipulator
+  File "/home/admin204/isaac/exts/isaacsim.robot.manipulators/isaacsim/robot/manipulators/manipulators/single_manipulator.py", line 18, in <module>
+    from isaacsim.core.prims import SingleArticulation, SingleRigidPrim
+  File "/home/admin204/isaac/exts/isaacsim.core.prims/isaacsim/core/prims/__init__.py", line 16, in <module>
+    from .impl import *
+  File "/home/admin204/isaac/exts/isaacsim.core.prims/isaacsim/core/prims/impl/__init__.py", line 16, in <module>
+    from .articulation import Articulation
+  File "/home/admin204/isaac/exts/isaacsim.core.prims/isaacsim/core/prims/impl/articulation.py", line 27, in <module>
+    import torch
+  File "/home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/__init__.py", line 409, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+ImportError: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+
+2026-04-15T12:58:44Z [20,860ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'omni.isaac.franka' in '/home/admin204/isaac/extsDeprecated/omni.isaac.franka' failed to load.
+
+At:
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+
+2026-04-15T12:58:44Z [20,860ms] [Error] [omni.ext.plugin] [ext: omni.isaac.franka-1.0.7] Failed to startup python extension.
+[20.898s] [ext: isaacsim.cortex.behaviors-2.0.14] startup
+2026-04-15T12:58:44Z [20,877ms] [Warning] [omni.isaac.franka] omni.isaac.franka has been deprecated in favor of isaacsim.robot.manipulators.examples.franka. Please update your code accordingly.
+2026-04-15T12:58:44Z [20,878ms] [Warning] [omni.isaac.franka.franka] omni.isaac.franka has been deprecated in favor of isaacsim.robot.manipulators.examples.franka. Please update your code accordingly.
+[20.905s] [ext: omni.sensors.nv.materials-2.0.0] startup
+[20.916s] [ext: omni.sensors.nv.wpm-3.0.0] startup
+[20.921s] [ext: omni.sensors.net-1.0.0] startup
+[20.928s] [ext: omni.isaac.cortex.sample_behaviors-2.0.5] startup
+2026-04-15T12:58:44Z [20,903ms] [Warning] [omni.isaac.cortex.sample_behaviors] omni.isaac.cortex.sample_behaviors has been deprecated in favor of isaacsim.cortex.behaviors. Please update your code accordingly.
+[20.931s] [ext: isaacsim.sensors.physics-0.4.3] startup
+2026-04-15T12:58:44Z [20,970ms] [Error] [omni.graph.core._impl.extension] OGN node registration completed with errors: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+2026-04-15T12:58:44Z [20,975ms] [Error] [omni.ext._impl._internal] Failed to import python module isaacsim.sensors.physics from /home/admin204/isaac/exts/isaacsim.sensors.physics. Error: module 'torch' has no attribute 'Tensor'. Traceback:
+Traceback (most recent call last):
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py", line 196, in _custom_importer
+    return _import_public(ext_module.path, ext_module.name, reload_enabled)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/kernel/py/carb/profiler/__init__.py", line 99, in wrapper
+    r = f(*args, **kwds)
+        ^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py", line 103, in _import_public
+    module = import_module(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/kernel/py/carb/profiler/__init__.py", line 99, in wrapper
+    r = f(*args, **kwds)
+        ^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 85, in import_module
+    return importlib.import_module(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/python/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/admin204/isaac/exts/isaacsim.sensors.physics/isaacsim/sensors/physics/__init__.py", line 16, in <module>
+    from .impl import *
+  File "/home/admin204/isaac/exts/isaacsim.sensors.physics/isaacsim/sensors/physics/impl/__init__.py", line 16, in <module>
+    from .commands import *
+  File "/home/admin204/isaac/exts/isaacsim.sensors.physics/isaacsim/sensors/physics/impl/commands.py", line 21, in <module>
+    from isaacsim.core.utils.prims import delete_prim
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/prims.py", line 31, in <module>
+    from isaacsim.core.utils.types import SDF_type_to_Gf
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/types.py", line 95, in <module>
+    class XFormPrimViewState(object):
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/types.py", line 104, in XFormPrimViewState
+    self, positions: Union[np.ndarray, torch.Tensor], orientations: Union[np.ndarray, torch.Tensor]
+                                       ^^^^^^^^^^^^
+AttributeError: module 'torch' has no attribute 'Tensor'
+
+2026-04-15T12:58:44Z [20,975ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'isaacsim.sensors.physics' in '/home/admin204/isaac/exts/isaacsim.sensors.physics' failed to load.
+
+At:
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+
+2026-04-15T12:58:44Z [20,975ms] [Error] [omni.ext.plugin] [ext: isaacsim.sensors.physics-0.4.3] Failed to startup python extension.
+[21.014s] [ext: omni.sensors.nv.radar-3.0.0] startup
+[21.032s] [ext: omni.sensors.nv.lidar-3.0.0] startup
+[21.043s] [ext: omni.sensors.nv.ids-2.0.0] startup
+[21.047s] [ext: isaacsim.simulation_app-2.12.2] startup
+[21.051s] [ext: isaacsim.robot.policy.examples-4.1.11] startup
+[21.057s] [ext: isaacsim.sensors.rtx-15.8.4] startup
+2026-04-15T12:58:44Z [21,108ms] [Error] [omni.graph.core._impl.extension] OGN node registration completed with errors: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+2026-04-15T12:58:44Z [21,112ms] [Error] [omni.ext._impl.custom_importer] Failed to import python module isaacsim.sensors.rtx. Error: cannot import name 'get_prim_at_path' from 'isaacsim.core.utils.prims' (/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/prims.py). Traceback:
+Traceback (most recent call last):
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 85, in import_module
+    return importlib.import_module(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/python/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/admin204/isaac/exts/isaacsim.sensors.rtx/isaacsim/sensors/rtx/__init__.py", line 16, in <module>
+    from .impl import *
+  File "/home/admin204/isaac/exts/isaacsim.sensors.rtx/isaacsim/sensors/rtx/impl/__init__.py", line 16, in <module>
+    from .commands import *
+  File "/home/admin204/isaac/exts/isaacsim.sensors.rtx/isaacsim/sensors/rtx/impl/commands.py", line 26, in <module>
+    from isaacsim.core.utils.xforms import reset_and_set_xform_ops
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/xforms.py", line 18, in <module>
+    from isaacsim.core.utils.prims import (
+ImportError: cannot import name 'get_prim_at_path' from 'isaacsim.core.utils.prims' (/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/prims.py)
+
+2026-04-15T12:58:44Z [21,112ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'isaacsim.sensors.rtx' in '/home/admin204/isaac/exts/isaacsim.sensors.rtx' failed to load.
+
+At:
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+
+2026-04-15T12:58:44Z [21,113ms] [Error] [omni.ext.plugin] [ext: isaacsim.sensors.rtx-15.8.4] Failed to startup python extension.
+[21.169s] [ext: omni.isaac.kit-2.0.6] startup
+2026-04-15T12:58:44Z [21,145ms] [Warning] [omni.isaac.kit] omni.isaac.kit has been deprecated in favor of isaacsim.simulation_app. Please update your code accordingly.
+[21.173s] [ext: omni.isaac.quadruped-3.0.7] startup
+2026-04-15T12:58:44Z [21,153ms] [Warning] [omni.isaac.quadruped] omni.isaac.quadruped has been deprecated in favor of isaacsim.robot.policy.examples. Please update your code accordingly.
+[21.181s] [ext: omni.isaac.lula-4.0.6] startup
+2026-04-15T12:58:44Z [21,164ms] [Warning] [omni.isaac.lula] omni.isaac.lula has been deprecated in favor of isaacsim.robot_motion.lula. Please update your code accordingly.
+[21.195s] [ext: isaacsim.gui.sensors.icon-2.0.3] startup
+[21.279s] [ext: isaacsim.gui.content_browser-0.1.11] startup
+[21.301s] [ext: omni.isaac.sensor-13.0.7] startup
+2026-04-15T12:58:44Z [21,282ms] [Warning] [omni.isaac.sensor] omni.isaac.sensor has been deprecated in favor of isaacsim.sensors.camera, isaacsim.sensors.physics, isaacsim.sensors.physx, and isaacsim.sensors.rtx. Please update your code accordingly.
+2026-04-15T12:58:44Z [21,312ms] [Error] [omni.graph.core._impl.extension] OGN node registration completed with errors: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+2026-04-15T12:58:44Z [21,316ms] [Error] [omni.ext._impl.custom_importer] Failed to import python module omni.isaac.sensor. Error: cannot import name 'delete_prim' from 'isaacsim.core.utils.prims' (/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/prims.py). Traceback:
+Traceback (most recent call last):
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 85, in import_module
+    return importlib.import_module(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/python/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/admin204/isaac/extsDeprecated/omni.isaac.sensor/omni/isaac/sensor/__init__.py", line 25, in <module>
+    from isaacsim.sensors.physics import _sensor
+  File "/home/admin204/isaac/exts/isaacsim.sensors.physics/isaacsim/sensors/physics/__init__.py", line 16, in <module>
+    from .impl import *
+  File "/home/admin204/isaac/exts/isaacsim.sensors.physics/isaacsim/sensors/physics/impl/__init__.py", line 16, in <module>
+    from .commands import *
+  File "/home/admin204/isaac/exts/isaacsim.sensors.physics/isaacsim/sensors/physics/impl/commands.py", line 21, in <module>
+    from isaacsim.core.utils.prims import delete_prim
+ImportError: cannot import name 'delete_prim' from 'isaacsim.core.utils.prims' (/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/prims.py)
+
+2026-04-15T12:58:44Z [21,317ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'omni.isaac.sensor' in '/home/admin204/isaac/extsDeprecated/omni.isaac.sensor' failed to load.
+
+At:
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+
+2026-04-15T12:58:44Z [21,317ms] [Error] [omni.ext.plugin] [ext: omni.isaac.sensor-13.0.7] Failed to startup python extension.
+[21.376s] [ext: omni.isaac.surface_gripper-2.0.6] startup
+2026-04-15T12:58:44Z [21,356ms] [Warning] [omni.isaac.sensor] omni.isaac.sensor has been deprecated in favor of isaacsim.sensors.camera, isaacsim.sensors.physics, isaacsim.sensors.physx, and isaacsim.sensors.rtx. Please update your code accordingly.
+2026-04-15T12:58:44Z [21,357ms] [Warning] [omni.isaac.surface_gripper] omni.isaac.surface_gripper has been deprecated in favor of isaacsim.robot.surface_gripper. Please update your code accordingly.
+2026-04-15T12:58:44Z [21,425ms] [Error] [omni.graph.core._impl.extension] OGN node registration completed with errors: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+2026-04-15T12:58:44Z [21,429ms] [Error] [omni.ext._impl._internal] Failed to import python module omni.isaac.surface_gripper from /home/admin204/isaac/extsDeprecated/omni.isaac.surface_gripper. Error: module 'torch' has no attribute 'jit'. Traceback:
+Traceback (most recent call last):
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py", line 196, in _custom_importer
+    return _import_public(ext_module.path, ext_module.name, reload_enabled)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/kernel/py/carb/profiler/__init__.py", line 99, in wrapper
+    r = f(*args, **kwds)
+        ^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py", line 103, in _import_public
+    module = import_module(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/kernel/py/carb/profiler/__init__.py", line 99, in wrapper
+    r = f(*args, **kwds)
+        ^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 85, in import_module
+    return importlib.import_module(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/python/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/admin204/isaac/extsDeprecated/omni.isaac.surface_gripper/omni/isaac/surface_gripper/__init__.py", line 26, in <module>
+    from isaacsim.robot.surface_gripper import _surface_gripper
+  File "/home/admin204/isaac/exts/isaacsim.robot.surface_gripper/isaacsim/robot/surface_gripper/__init__.py", line 17, in <module>
+    from .impl import *
+  File "/home/admin204/isaac/exts/isaacsim.robot.surface_gripper/isaacsim/robot/surface_gripper/impl/__init__.py", line 18, in <module>
+    from .gripper_view import GripperView
+  File "/home/admin204/isaac/exts/isaacsim.robot.surface_gripper/isaacsim/robot/surface_gripper/impl/gripper_view.py", line 22, in <module>
+    from isaacsim.core.experimental.prims import XformPrim
+  File "/home/admin204/isaac/exts/isaacsim.core.experimental.prims/isaacsim/core/experimental/prims/__init__.py", line 16, in <module>
+    from .impl import *
+  File "/home/admin204/isaac/exts/isaacsim.core.experimental.prims/isaacsim/core/experimental/prims/impl/__init__.py", line 16, in <module>
+    from .articulation import Articulation
+  File "/home/admin204/isaac/exts/isaacsim.core.experimental.prims/isaacsim/core/experimental/prims/impl/articulation.py", line 32, in <module>
+    from isaacsim.core.simulation_manager import SimulationManager
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/__init__.py", line 15, in <module>
+    from .impl.extension import Extension
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/impl/__init__.py", line 15, in <module>
+    from .extension import *
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/impl/extension.py", line 21, in <module>
+    from .simulation_manager import SimulationManager
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/impl/simulation_manager.py", line 20, in <module>
+    import isaacsim.core.utils.torch as torch_utils
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/torch/__init__.py", line 15, in <module>
+    from .maths import *
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/torch/maths.py", line 23, in <module>
+    @torch.jit.script
+     ^^^^^^^^^
+AttributeError: module 'torch' has no attribute 'jit'
+
+2026-04-15T12:58:44Z [21,429ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'omni.isaac.surface_gripper' in '/home/admin204/isaac/extsDeprecated/omni.isaac.surface_gripper' failed to load.
+
+At:
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+
+2026-04-15T12:58:44Z [21,429ms] [Error] [omni.ext.plugin] [ext: omni.isaac.surface_gripper-2.0.6] Failed to startup python extension.
+[21.482s] [ext: omni.isaac.universal_robots-1.0.6] startup
+2026-04-15T12:58:44Z [21,462ms] [Warning] [omni.isaac.universal_robots] omni.isaac.universal_robots has been deprecated in favor of isaacsim.robot.manipulators.examples.universal_robots. Please update your code accordingly.
+2026-04-15T12:58:44Z [21,464ms] [Warning] [omni.isaac.universal_robots.kinematics_solver] omni.isaac.franka has been deprecated in favor of isaacsim.robot.manipulators.examples.universal_robots. Please update your code accordingly.
+2026-04-15T12:58:44Z [21,464ms] [Warning] [omni.isaac.surface_gripper] omni.isaac.surface_gripper has been deprecated in favor of isaacsim.robot.surface_gripper. Please update your code accordingly.
+2026-04-15T12:58:44Z [21,578ms] [Error] [omni.graph.core._impl.extension] OGN node registration completed with errors: module 'torch' has no attribute 'jit'
+2026-04-15T12:58:44Z [21,581ms] [Error] [omni.ext._impl.custom_importer] Failed to import python module omni.isaac.universal_robots. Error: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12. Traceback:
+Traceback (most recent call last):
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 85, in import_module
+    return importlib.import_module(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/python/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/admin204/isaac/extsDeprecated/omni.isaac.universal_robots/omni/isaac/universal_robots/__init__.py", line 26, in <module>
+    from .kinematics_solver import *
+  File "/home/admin204/isaac/extsDeprecated/omni.isaac.universal_robots/omni/isaac/universal_robots/kinematics_solver.py", line 23, in <module>
+    from isaacsim.robot.manipulators.examples.universal_robots.kinematics_solver import *
+  File "/home/admin204/isaac/exts/isaacsim.robot.manipulators/isaacsim/robot/manipulators/__init__.py", line 16, in <module>
+    from .manipulators.single_manipulator import SingleManipulator
+  File "/home/admin204/isaac/exts/isaacsim.robot.manipulators/isaacsim/robot/manipulators/manipulators/__init__.py", line 17, in <module>
+    from isaacsim.robot.manipulators.manipulators.single_manipulator import SingleManipulator
+  File "/home/admin204/isaac/exts/isaacsim.robot.manipulators/isaacsim/robot/manipulators/manipulators/single_manipulator.py", line 18, in <module>
+    from isaacsim.core.prims import SingleArticulation, SingleRigidPrim
+  File "/home/admin204/isaac/exts/isaacsim.core.prims/isaacsim/core/prims/__init__.py", line 16, in <module>
+    from .impl import *
+  File "/home/admin204/isaac/exts/isaacsim.core.prims/isaacsim/core/prims/impl/__init__.py", line 16, in <module>
+    from .articulation import Articulation
+  File "/home/admin204/isaac/exts/isaacsim.core.prims/isaacsim/core/prims/impl/articulation.py", line 27, in <module>
+    import torch
+  File "/home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/__init__.py", line 409, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+ImportError: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+
+2026-04-15T12:58:44Z [21,581ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'omni.isaac.universal_robots' in '/home/admin204/isaac/extsDeprecated/omni.isaac.universal_robots' failed to load.
+
+At:
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+
+2026-04-15T12:58:44Z [21,582ms] [Error] [omni.ext.plugin] [ext: omni.isaac.universal_robots-1.0.6] Failed to startup python extension.
+[21.620s] [ext: isaacsim.robot.wheeled_robots-4.0.24] startup
+2026-04-15T12:58:44Z [21,601ms] [Warning] [omni.isaac.universal_robots] omni.isaac.universal_robots has been deprecated in favor of isaacsim.robot.manipulators.examples.universal_robots. Please update your code accordingly.
+2026-04-15T12:58:44Z [21,605ms] [Warning] [omni.isaac.universal_robots.kinematics_solver] omni.isaac.franka has been deprecated in favor of isaacsim.robot.manipulators.examples.universal_robots. Please update your code accordingly.
+2026-04-15T12:58:44Z [21,682ms] [Error] [omni.graph.core._impl.extension] OGN node registration completed with errors: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+2026-04-15T12:58:44Z [21,689ms] [Error] [omni.ext._impl._internal] Failed to import python module isaacsim.robot.wheeled_robots from /home/admin204/isaac/exts/isaacsim.robot.wheeled_robots. Error: module 'torch' has no attribute 'jit'. Traceback:
+Traceback (most recent call last):
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py", line 196, in _custom_importer
+    return _import_public(ext_module.path, ext_module.name, reload_enabled)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/kernel/py/carb/profiler/__init__.py", line 99, in wrapper
+    r = f(*args, **kwds)
+        ^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py", line 103, in _import_public
+    module = import_module(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/kernel/py/carb/profiler/__init__.py", line 99, in wrapper
+    r = f(*args, **kwds)
+        ^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 85, in import_module
+    return importlib.import_module(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/python/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/admin204/isaac/exts/isaacsim.robot.wheeled_robots/isaacsim/robot/wheeled_robots/__init__.py", line 15, in <module>
+    from .controllers import *
+  File "/home/admin204/isaac/exts/isaacsim.robot.wheeled_robots/isaacsim/robot/wheeled_robots/controllers/__init__.py", line 15, in <module>
+    from .ackermann_controller import AckermannController
+  File "/home/admin204/isaac/exts/isaacsim.robot.wheeled_robots/isaacsim/robot/wheeled_robots/controllers/ackermann_controller.py", line 19, in <module>
+    from isaacsim.core.api.controllers.base_controller import BaseController
+  File "/home/admin204/isaac/exts/isaacsim.core.api/isaacsim/core/api/__init__.py", line 17, in <module>
+    from isaacsim.core.api.physics_context.physics_context import PhysicsContext
+  File "/home/admin204/isaac/exts/isaacsim.core.api/isaacsim/core/api/physics_context/__init__.py", line 15, in <module>
+    from isaacsim.core.api.physics_context.physics_context import PhysicsContext
+  File "/home/admin204/isaac/exts/isaacsim.core.api/isaacsim/core/api/physics_context/physics_context.py", line 20, in <module>
+    from isaacsim.core.simulation_manager import SimulationManager
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/__init__.py", line 15, in <module>
+    from .impl.extension import Extension
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/impl/__init__.py", line 15, in <module>
+    from .extension import *
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/impl/extension.py", line 21, in <module>
+    from .simulation_manager import SimulationManager
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/impl/simulation_manager.py", line 20, in <module>
+    import isaacsim.core.utils.torch as torch_utils
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/torch/__init__.py", line 15, in <module>
+    from .maths import *
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/torch/maths.py", line 23, in <module>
+    @torch.jit.script
+     ^^^^^^^^^
+AttributeError: module 'torch' has no attribute 'jit'
+
+2026-04-15T12:58:44Z [21,689ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'isaacsim.robot.wheeled_robots' in '/home/admin204/isaac/exts/isaacsim.robot.wheeled_robots' failed to load.
+
+At:
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+
+2026-04-15T12:58:44Z [21,690ms] [Error] [omni.ext.plugin] [ext: isaacsim.robot.wheeled_robots-4.0.24] Failed to startup python extension.
+[21.740s] [ext: omni.isaac.utils-2.0.6] startup
+[21.757s] [ext: isaacsim.app.about-2.0.11] startup
+[21.778s] [ext: omni.isaac.version-2.0.7] startup
+2026-04-15T12:58:44Z [21,756ms] [Warning] [omni.isaac.version] omni.isaac.version has been deprecated in favor of isaacsim.core.version. Please update your code accordingly.
+[21.784s] [ext: omni.isaac.wheeled_robots-3.0.7] startup
+2026-04-15T12:58:44Z [21,764ms] [Warning] [omni.isaac.wheeled_robots] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-04-15T12:58:44Z [21,764ms] [Warning] [omni.isaac.wheeled_robots.controllers] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-04-15T12:58:44Z [21,765ms] [Warning] [omni.isaac.wheeled_robots.controllers.ackermann_controller] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-04-15T12:58:45Z [21,834ms] [Error] [omni.graph.core._impl.extension] OGN node registration completed with errors: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+2026-04-15T12:58:45Z [22,665ms] [Error] [omni.ext._impl.custom_importer] Failed to import python module omni.isaac.wheeled_robots. Error: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12. Traceback:
+Traceback (most recent call last):
+  File "/home/admin204/isaac/kit/kernel/py/omni/ext/_impl/custom_importer.py", line 85, in import_module
+    return importlib.import_module(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/admin204/isaac/kit/python/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/admin204/isaac/extsDeprecated/omni.isaac.wheeled_robots/omni/isaac/wheeled_robots/__init__.py", line 27, in <module>
+    from .controllers import *
+  File "/home/admin204/isaac/extsDeprecated/omni.isaac.wheeled_robots/omni/isaac/wheeled_robots/controllers/__init__.py", line 27, in <module>
+    from .ackermann_controller import *
+  File "/home/admin204/isaac/extsDeprecated/omni.isaac.wheeled_robots/omni/isaac/wheeled_robots/controllers/ackermann_controller.py", line 23, in <module>
+    from isaacsim.robot.wheeled_robots.controllers.ackermann_controller_deprecated import *
+  File "/home/admin204/isaac/exts/isaacsim.robot.wheeled_robots/isaacsim/robot/wheeled_robots/controllers/ackermann_controller_deprecated.py", line 19, in <module>
+    from isaacsim.core.api.controllers.base_controller import BaseController
+  File "/home/admin204/isaac/exts/isaacsim.core.api/isaacsim/core/api/__init__.py", line 17, in <module>
+    from isaacsim.core.api.physics_context.physics_context import PhysicsContext
+  File "/home/admin204/isaac/exts/isaacsim.core.api/isaacsim/core/api/physics_context/__init__.py", line 15, in <module>
+    from isaacsim.core.api.physics_context.physics_context import PhysicsContext
+  File "/home/admin204/isaac/exts/isaacsim.core.api/isaacsim/core/api/physics_context/physics_context.py", line 20, in <module>
+    from isaacsim.core.simulation_manager import SimulationManager
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/__init__.py", line 15, in <module>
+    from .impl.extension import Extension
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/impl/__init__.py", line 15, in <module>
+    from .extension import *
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/impl/extension.py", line 21, in <module>
+    from .simulation_manager import SimulationManager
+  File "/home/admin204/isaac/exts/isaacsim.core.simulation_manager/isaacsim/core/simulation_manager/impl/simulation_manager.py", line 20, in <module>
+    import isaacsim.core.utils.torch as torch_utils
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/torch/__init__.py", line 15, in <module>
+    from .maths import *
+  File "/home/admin204/isaac/exts/isaacsim.core.utils/isaacsim/core/utils/torch/maths.py", line 19, in <module>
+    import torch
+  File "/home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/__init__.py", line 409, in <module>
+    from torch._C import *  # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^
+ImportError: /home/admin204/isaac/exts/omni.isaac.ml_archive/pip_prebundle/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkCreate_12_8, version libnvJitLink.so.12
+
+2026-04-15T12:58:45Z [22,666ms] [Error] [carb.scripting-python.plugin] Exception: Extension python module: 'omni.isaac.wheeled_robots' in '/home/admin204/isaac/extsDeprecated/omni.isaac.wheeled_robots' failed to load.
+
+At:
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(222): startup
+  /home/admin204/isaac/kit/kernel/py/omni/ext/_impl/_internal.py(337): startup_extension
+  PythonExtension.cpp::startup()(2): <module>
+
+2026-04-15T12:58:45Z [22,671ms] [Error] [omni.ext.plugin] [ext: omni.isaac.wheeled_robots-3.0.7] Failed to startup python extension.
+[23.915s] [ext: omni.kit.widget.imageview-1.0.4] startup
+2026-04-15T12:58:47Z [23,897ms] [Warning] [omni.isaac.wheeled_robots] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-04-15T12:58:47Z [23,898ms] [Warning] [omni.isaac.wheeled_robots.controllers] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+2026-04-15T12:58:47Z [23,899ms] [Warning] [omni.isaac.wheeled_robots.controllers.ackermann_controller] omni.isaac.wheeled_robots has been deprecated in favor of isaacsim.robot.wheeled_robots. Please update your code accordingly.
+[23.927s] [ext: omni.isaac.window.about-2.0.7] startup
+2026-04-15T12:58:47Z [23,908ms] [Warning] [omni.isaac.window.about] omni.isaac.window.about has been deprecated in favor of isaacsim.app.about. Please update your code accordingly.
+2026-04-15T12:58:47Z [23,909ms] [Warning] [omni.isaac.window.about.about] omni.isaac.window.about.about has been deprecated in favor of isaacsim.app.about.about. Please update your code accordingly.
+[23.938s] [ext: omni.kit.property.audio-1.0.16] startup
+[23.953s] [ext: omni.kit.property.camera-1.0.10] startup
+[23.961s] [ext: omni.kit.window.quicksearch-2.4.4] startup
+[23.981s] [ext: omni.kit.property.geometry-2.0.4] startup
+[23.993s] [ext: omni.hydra.scene_api-0.1.2] startup
+[24.010s] [ext: omni.kit.property.light-1.0.12] startup
+Inconsistency detected by ld.so: ../elf/dl-tls.c: 618: _dl_allocate_tls_init: Assertion `listp != NULL' fail

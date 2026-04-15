@@ -1,0 +1,42 @@
+(base) admin204@admin204-Precision-Tower-7910:~/isaac$ echo $LD_LIBRARY_PATH
+/usr/local/cuda-12.1/lib64:/usr/local/cuda/lib64:${LD_LIBRARY_PATH}
+(base) admin204@admin204-Precision-Tower-7910:~/isaac$ echo $PATH
+/home/admin204/miniconda3/bin:/home/admin204/miniconda3/condabin:/usr/local/cuda-12.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/usr/local/maven/apache-maven-3.8.1/bin:/home/admin204/miniconda3/bin
+(base) admin204@admin204-Precision-Tower-7910:~/isaac$ echo $PYTHONPATH
+
+(base) admin204@admin204-Precision-Tower-7910:~/isaac$ echo $CONDA_PREFIX
+/home/admin204/miniconda3
+(base) admin204@admin204-Precision-Tower-7910:~/isaac$ which python
+/home/admin204/miniconda3/bin/python
+(base) admin204@admin204-Precision-Tower-7910:~/isaac$ nvidia-smi
+Wed Apr 15 21:05:01 2026
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.126.09             Driver Version: 580.126.09     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3090        Off |   00000000:02:00.0 Off |                  N/A |
+| 42%   34C    P8             20W /  350W |    5258MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 2080 Ti     Off |   00000000:83:00.0 Off |                  N/A |
+| 22%   34C    P8             11W /  250W |       9MiB /  11264MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA GeForce RTX 3090        Off |   00000000:84:00.0 Off |                  N/A |
+| 41%   32C    P8             23W /  350W |      18MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            3330      G   /usr/lib/xorg/Xorg                        4MiB |
+|    0   N/A  N/A           34472      C   python                                 5234MiB |
+|    1   N/A  N/A            3330      G   /usr/lib/xorg/Xorg                        4MiB |
+|    2   N/A  N/A            3330      G   /usr/lib/xorg/Xorg                        4MiB |
++----------------------------------------------------------------------------------------

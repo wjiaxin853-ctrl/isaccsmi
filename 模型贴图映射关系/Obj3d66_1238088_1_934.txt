@@ -1,0 +1,45 @@
+Obj3d66_1238088_1_934 贴图映射关系
+生成依据: /Users/wjx/Documents/wjx/isaccsmi/output.txt 中最新一次成功执行结果
+
+目标模型
+- Mesh Path: /World/Obj3d66_1238088_1_934
+- Looks Scope: /World/Obj3d66_1238088_1_934_Looks
+- Texture Dir: C:\Users\522\Downloads\1238088_07711214bf3dcb13d3b8e9ac84b3231f
+
+当前执行成功写入的分区 -> 贴图文件 映射
+- matId 1 -> /World/Obj3d66_1238088_1_934/_1_PhysicalMaterial
+  texture -> C:\Users\522\Downloads\1238088_07711214bf3dcb13d3b8e9ac84b3231f\3d66Model-1238088-files-1.png
+- matId 2 -> /World/Obj3d66_1238088_1_934/_2_PhysicalMaterial
+  texture -> C:\Users\522\Downloads\1238088_07711214bf3dcb13d3b8e9ac84b3231f\3d66Model-1238088-files-2.png
+- matId 3 -> /World/Obj3d66_1238088_1_934/_3_PhysicalMaterial
+  texture -> C:\Users\522\Downloads\1238088_07711214bf3dcb13d3b8e9ac84b3231f\3d66Model-1238088-files-10.png
+- matId 4 -> /World/Obj3d66_1238088_1_934/_4_PhysicalMaterial
+  texture -> C:\Users\522\Downloads\1238088_07711214bf3dcb13d3b8e9ac84b3231f\3d66Model-1238088-files-11.png
+- matId 5 -> /World/Obj3d66_1238088_1_934/_5_PhysicalMaterial
+  texture -> C:\Users\522\Downloads\1238088_07711214bf3dcb13d3b8e9ac84b3231f\3d66Model-1238088-files-12.png
+- matId 6 -> /World/Obj3d66_1238088_1_934/_6_PhysicalMaterial
+  texture -> C:\Users\522\Downloads\1238088_07711214bf3dcb13d3b8e9ac84b3231f\3d66Model-1238088-files-13.png
+- matId 7 -> /World/Obj3d66_1238088_1_934/_7_PhysicalMaterial
+  texture -> C:\Users\522\Downloads\1238088_07711214bf3dcb13d3b8e9ac84b3231f\3d66Model-1238088-files-14.png
+- matId 8 -> /World/Obj3d66_1238088_1_934/_8_PhysicalMaterial
+  texture -> C:\Users\522\Downloads\1238088_07711214bf3dcb13d3b8e9ac84b3231f\3d66Model-1238088-files-15.png
+- matId 9 -> /World/Obj3d66_1238088_1_934/_9_PhysicalMaterial
+  texture -> C:\Users\522\Downloads\1238088_07711214bf3dcb13d3b8e9ac84b3231f\3d66Model-1238088-files-16.png
+
+可直接回填到脚本的 MANUAL_TEXTURE_MAP
+{
+    1: 1,
+    2: 2,
+    3: 10,
+    4: 11,
+    5: 12,
+    6: 13,
+    7: 14,
+    8: 15,
+    9: 16,
+}
+
+说明
+- 这份映射表示的是“最新一次脚本成功执行时实际使用的贴图对应关系”。
+- 它适合用于复原当前结果。
+- 如果后续人工确认某些分区需要换成别的 PNG，只需要更新上面的 MANUAL_TEXTURE_MAP，同时同步修改本文件。
