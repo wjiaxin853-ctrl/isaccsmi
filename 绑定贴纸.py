@@ -14,8 +14,19 @@ DEFAULT_TARGET_MESH_PATH = "/World/Obj3d66_1238088_1_934"
 DEFAULT_LOOKS_SCOPE_PATH = "/World/Obj3d66_1238088_1_934_Looks"
 
 # 如果你已经知道材质分区和贴图编号的对应关系，可以直接在这里手工指定。
-# 例如：{1: 1, 2: 2, 3: 10, 4: 11}
-MANUAL_TEXTURE_MAP = {}
+# 当前采用试验映射 C：
+# 保留上一版明显更好的前 7 个分区，只替换最后 2 个分区继续试。
+MANUAL_TEXTURE_MAP = {
+    1: 1,
+    2: 2,
+    3: 10,
+    4: 11,
+    5: 12,
+    6: 13,
+    7: 14,
+    8: 17,
+    9: 18,
+}
 
 OUTPUT_DIR = os.environ.get("OBJ3D66_BIND_OUTPUT_DIR", DEFAULT_OUTPUT_DIR)
 TEXTURE_DIR = os.environ.get("OBJ3D66_TEXTURE_DIR", DEFAULT_TEXTURE_DIR)
