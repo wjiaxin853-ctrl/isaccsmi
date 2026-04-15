@@ -6,7 +6,7 @@ import omni.usd
 from pxr import Usd, UsdGeom, UsdLux, UsdPhysics, UsdShade
 
 
-DEFAULT_OUTPUT_FILE = r"C:\Users\522\Desktop\code\isaccsmi\output.txt"
+DEFAULT_OUTPUT_FILE = r"C:\Users\522\Downloads\data\1output.txt"
 OUTPUT_FILE = os.environ.get("STAGE_DIAGNOSTIC_OUTPUT", DEFAULT_OUTPUT_FILE)
 MAX_VALUE_LEN = 400
 LIGHT_TYPE_NAMES = {
