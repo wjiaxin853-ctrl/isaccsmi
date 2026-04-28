@@ -1,0 +1,33 @@
+日志文件: C:\Users\522\isaac-sim\output_standalone\output.txt
+输出目录: C:\Users\522\isaac-sim\output_standalone
+场景文件: C:\Users\522\isaac-sim\data\Collected_train\train.usd
+语义预处理完成，已尝试写入标签的 Prim 数量: 43
+已导出相机参数: C:\Users\522\isaac-sim\output_standalone\camera_params\camera_params.json
+render product: <omni.replicator.core.scripts.utils.viewport_manager.HydraTexture object at 0x00000224D69BAED0>
+已附加 annotator: rgb -> rgb
+已附加 annotator: distance_to_camera -> distance_to_camera
+已附加 annotator: distance_to_image_plane -> distance_to_image_plane
+已附加 annotator: motion_vectors -> motion_vectors
+已附加 annotator: normals -> normals
+已附加 annotator: pointcloud -> pointcloud
+时间线已开始播放，开始导出多通道数据...
+使用 simulation_app.update 推进帧，updates_per_frame=3
+Traceback (most recent call last):
+  File "c:/users/522/isaac-sim/extscache/omni.replicator.core-1.12.27+107.3.3.wx64.r.cp311/omni/replicator/core/scripts/orchestrator.py", line 921, in _set_tick_graph
+    og.Controller.edit(
+  File "c:/users/522/isaac-sim/extscache/omni.graph-1.141.2+69cbf6ad.wx64.r.cp311/omni/graph/core/_impl/controller.py", line 1172, in edit
+    return obj.__edit(obj, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:/users/522/isaac-sim/extscache/omni.graph-1.141.2+69cbf6ad.wx64.r.cp311/omni/graph/core/_impl/controller.py", line 1373, in __edit
+    return __do_the_edits()
+           ^^^^^^^^^^^^^^^^
+  File "c:/users/522/isaac-sim/extscache/omni.graph-1.141.2+69cbf6ad.wx64.r.cp311/omni/graph/core/_impl/controller.py", line 1254, in __do_the_edits
+    graph = obj.create_graph(graph_id)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:/users/522/isaac-sim/extscache/omni.graph-1.141.2+69cbf6ad.wx64.r.cp311/omni/graph/core/_impl/graph_controller.py", line 117, in create_graph
+    return obj.__create_graph(obj, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:/users/522/isaac-sim/extscache/omni.graph-1.141.2+69cbf6ad.wx64.r.cp311/omni/graph/core/_impl/graph_controller.py", line 183, in __create_graph
+    raise og.OmniGraphError(f"Failed to wrap graph in node given {graph_id}")
+omni.graph.core._impl.errors.OmniGraphError: OmniGraphError: Failed to wrap graph in node given {'graph_path': '/Orchestrator', 'evaluator_name': 'push'}
+warmup=1/20
